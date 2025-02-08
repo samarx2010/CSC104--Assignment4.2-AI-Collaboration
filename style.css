@@ -1,0 +1,141 @@
+body{
+	
+background-color: rgb(243, 217, 217);	/*background color of website */
+font-family: Arial, sans-serif;
+text-align: center;
+padding: 20px;
+}
+
+h1 {
+
+color: black;
+
+}
+.banner {
+    background-color: rgb(128, 32, 32);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white; /* Text color */
+    padding: 50px 20px; /* Adjust padding as needed */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+.stroked-text {
+    font-size: 48px; /* Adjust the font size as needed */
+    color: #ff0000; /* Set the text color */
+    text-shadow: 
+        -3px -3px 0 #ffffff,  
+         3px -3px 0 #ffffff,
+        -3px  3px 0 #ffffff,
+         3px  3px 0 #ffffff; /* Create the stroke effect */
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 2.5em; /* Adjust font size as needed */
+}
+
+.white-banner {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin: 20px auto;
+    width: 20%; /* Adjust the width as needed */
+    border: 1px solid #ddd; /* Optional: Add a border */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+    text-align: center;
+}
+
+.polaroid {       /*how to create polaroid images for the main code */
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+	text-align: center;
+}
+
+.polaroid:hover {
+    transform: scale(1.05);
+}
+
+.polaroid-img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto;
+    display: block;
+	margin: 0 auto; /*Center the image inside the polaroid */
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+@media (max-width: 500px) {
+    .polaroid {
+        width: 90%;
+        margin: 10px auto;
+    }
+	.polaroid-img {
+        width: 100%; /* Make the image responsive */
+    }
+}
+
+p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/*Navigation Menu */ 
+
+.sidebar {
+    height: 100vh;
+    width: 200px;
+    background-color: rgb(128,32,32);
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+
+
+.content h1 {
+    margin-top: 0;
+}
+
+.content p {
+    margin: 20px 0;
+}
